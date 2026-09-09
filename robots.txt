@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://afectados-orionx.github.io/sitemap.xml
