@@ -56,6 +56,10 @@ h2{font-size:19px;margin:30px 0 8px}
 .btn span{display:block;color:var(--mut);font-size:13.5px}
 .btn.pri{border-color:var(--acc);background:var(--acc-bg)}
 .btn.pri .ico{background:var(--acc);color:#fff;border-color:var(--acc)}
+.redes{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0 6px}
+.redes-t{flex-basis:100%;color:var(--mut);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin:6px 0 0}
+.redes a{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 9px;text-decoration:none;color:var(--tx);font-size:14px;font-weight:600}
+.redes a .ico{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:13px;background:var(--soft);border:1px solid var(--line)}
 .box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:12px 0}
 .box.bad{border-left:4px solid var(--bad)}.box.info{border-left:4px solid var(--info)}
 p{margin:8px 0}
@@ -78,10 +82,14 @@ footer{color:var(--mut);font-size:13px;line-height:1.6;border-top:1px solid var(
   <a class="btn" href="https://afectados-orionx.github.io/orionx-monitor/" rel="noopener"><span class="ico">📡</span><div><b>Monitor público de billeteras</b><span>Dónde están hoy los fondos vinculados a OrionX, actualizado cada hora, verificable en la cadena de bloques</span></div></a>
   <a class="btn" href="https://github.com/afectados-orionx/respaldo-correos-orionx/tree/main/denuncias" rel="noopener"><span class="ico">⚖️</span><div><b>Plantillas para denunciar</b><span>Fiscalía, CMF, SERNAC y correo formal a OrionX: los datos exactos que piden los formularios y textos listos (también en PDF)</span></div></a>
   <a class="btn" href="https://github.com/afectados-orionx/respaldo-correos-orionx" rel="noopener"><span class="ico">💾</span><div><b>Respaldar mis correos de OrionX</b><span>Script gratuito y guía para principiantes. Tus correos son la prueba de tu saldo.</span></div></a>
-  <a class="btn" href="https://www.tiktok.com/@afectados_orionx" rel="noopener"><span class="ico">🎬</span><div><b>Videos explicativos (TikTok)</b><span>El caso explicado con fuente en pantalla</span></div></a>
-  <a class="btn" href="https://www.instagram.com/afectadosorionx/" rel="noopener"><span class="ico">📸</span><div><b>Instagram</b><span>@afectadosorionx: avances, contador semanal y alertas</span></div></a>
-  <a class="btn" href="https://www.facebook.com/profile.php?id=61594531881721" rel="noopener"><span class="ico">📘</span><div><b>Facebook</b><span>Página "Afectados por OrionX": guías paso a paso y novedades</span></div></a>
 </nav>
+
+<div class="redes" aria-label="Redes sociales">
+  <span class="redes-t">Redes sociales</span>
+  <a href="https://www.tiktok.com/@afectados_orionx" rel="noopener"><span class="ico">🎬</span>TikTok</a>
+  <a href="https://www.instagram.com/afectadosorionx/" rel="noopener"><span class="ico">📸</span>Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=61594531881721" rel="noopener"><span class="ico">📘</span>Facebook</a>
+</div>
 
 <h2 id="denunciar">Dónde denunciar (gratis, sin abogado)</h2>
 <ul>
