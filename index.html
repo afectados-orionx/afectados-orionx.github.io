@@ -34,7 +34,7 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://afectados-orionx.github.io/#org","name":"Afectados por OrionX","url":"https://afectados-orionx.github.io/","logo":"https://afectados-orionx.github.io/apple-touch-icon.png","image":"https://afectados-orionx.github.io/og.png","email":"afectados-orionx@proton.me","description":"Grupo voluntario y anónimo de clientes afectados por el cierre de Orionx SpA (3 de septiembre de 2026). Coordina denuncias, respaldo de evidencia y vigilancia pública de billeteras.","areaServed":"CL","contactPoint":[{"@type":"ContactPoint","contactType":"press","email":"afectados-orionx@proton.me","availableLanguage":["es"]}],"sameAs":["https://github.com/afectados-orionx","https://www.tiktok.com/@afectados_orionx","https://www.instagram.com/afectadosorionx/","https://www.facebook.com/profile.php?id=61594531881721","https://discord.gg/NhreVAj9Xv"]},
 {"@type":"WebSite","@id":"https://afectados-orionx.github.io/#web","name":"Afectados por OrionX","url":"https://afectados-orionx.github.io/","inLanguage":"es-CL","publisher":{"@id":"https://afectados-orionx.github.io/#org"},"description":"OrionX cerró el 3 de septiembre de 2026: qué hacer si tenías fondos. Discord, monitor de billeteras, plantillas para denunciar y respaldo de correos."},
-{"@type":"WebPage","@id":"https://afectados-orionx.github.io/#page","url":"https://afectados-orionx.github.io/","name":"OrionX cerró: qué hacer si tenías fondos","isPartOf":{"@id":"https://afectados-orionx.github.io/#web"},"about":{"@type":"Thing","name":"Cierre de Orionx SpA"},"datePublished":"2026-09-09","dateModified":"2026-09-13","inLanguage":"es-CL","primaryImageOfPage":"https://afectados-orionx.github.io/og.png"}
+{"@type":"WebPage","@id":"https://afectados-orionx.github.io/#page","url":"https://afectados-orionx.github.io/","name":"OrionX cerró: qué hacer si tenías fondos","isPartOf":{"@id":"https://afectados-orionx.github.io/#web"},"about":{"@type":"Thing","name":"Cierre de Orionx SpA"},"datePublished":"2026-09-09","dateModified":"2026-11-09","inLanguage":"es-CL","primaryImageOfPage":"https://afectados-orionx.github.io/og.png"}
 ]}
 </script>
 <style>
@@ -80,7 +80,7 @@ footer{color:var(--mut);font-size:13px;line-height:1.6;border-top:1px solid var(
 </header>
 
 <nav class="botones" aria-label="Enlaces principales" id="enlaces">
-  <a class="btn pri" href="https://discord.gg/NhreVAj9Xv" rel="noopener" id="discord"><span class="ico">👥</span><div><b>Unirme al grupo de afectados (Discord)</b><span>Más de 320 personas coordinando denuncias y rastreo de fondos. Adentro, un asistente te guía paso a paso.</span></div></a>
+  <a class="btn pri" href="https://discord.gg/NhreVAj9Xv" rel="noopener" id="discord"><span class="ico">👥</span><div><b>Unirme al grupo de afectados (Discord)</b><span>Coordinamos la querella colectiva, las denuncias y el rastreo de fondos. Adentro, un asistente te guía paso a paso.</span></div></a>
   <a class="btn" href="https://afectados-orionx.github.io/orionx-monitor/" rel="noopener"><span class="ico">📡</span><div><b>Monitor público de billeteras</b><span>Dónde están hoy los fondos vinculados a OrionX, actualizado cada hora, verificable en la cadena de bloques</span></div></a>
   <a class="btn" href="https://github.com/afectados-orionx/respaldo-correos-orionx/tree/main/denuncias" rel="noopener"><span class="ico">⚖️</span><div><b>Plantillas para denunciar</b><span>Fiscalía, CMF, SERNAC y correo formal a OrionX: los datos exactos que piden los formularios y textos listos (también en PDF)</span></div></a>
   <a class="btn" href="https://github.com/afectados-orionx/respaldo-correos-orionx" rel="noopener"><span class="ico">💾</span><div><b>Respaldar mis correos de OrionX</b><span>Script gratuito y guía para principiantes. Tus correos son la prueba de tu saldo.</span></div></a>
@@ -98,23 +98,29 @@ footer{color:var(--mut);font-size:13px;line-height:1.6;border-top:1px solid var(
 <ol>
   <li><b>Entra</b> con la invitación de arriba. Al llegar, lee <b>#reglas-y-bienvenida</b>.</li>
   <li><b>Haz tus tres denuncias</b> (Fiscalía, SERNAC y CMF). Escribe <b>/guia</b> en cualquier canal y el asistente del servidor te explica paso a paso.</li>
-  <li><b>Envía tus folios con el comando <code>/denuncias</code></b>. Se abre un formulario privado que solo ve la administración. <b>Los folios ya no se publican en el chat.</b></li>
+  <li><b>Envía tus folios con el comando <code>/denuncias</code></b>. Se abre un formulario privado que solo ve la administración. <b>Los folios ya no se publican en el chat.</b> ¿La página de la CMF no te funciona? Deja ese folio en blanco: si te aprueban, tienes <b>7 días</b> para enviarlo con <code>/cmf</code>. Si no alcanzas, vuelves a "En proceso" y postulas de nuevo cuando lo tengas.</li>
   <li><b>Recibes el rol Querellante</b> por mensaje privado y se abren los canales del caso.</li>
 </ol>
-<p>Con <b>/saldo</b> puedes ver lo que OrionX declaró que te debe en la nómina que presentó al tribunal: pide tu RUT y el correo con que te registraste, y la respuesta solo la ves tú. Con <b>/instrucciones</b> ves el resumen de los pasos. El asistente nunca te escribe primero ni te pide claves, frases semilla ni pagos.</p>
+<p>Con <b>/saldo</b> puedes ver lo que OrionX declaró que te debe en la nómina que presentó al tribunal: pide tu RUT y el correo con que te registraste, no muestra nada si los dos no coinciden y la respuesta solo la ves tú. Con <b>/instrucciones</b> ves el resumen de los pasos. Si no te aparecen los comandos, cierra y vuelve a abrir Discord.</p>
+<p>El asistente solo te escribe por privado para avisarte que te aprobaron o para recordarte el plazo de tu folio CMF. Nunca te pide datos, claves, frases semilla ni pagos.</p>
 </div>
 
 <h2 id="denunciar">Dónde denunciar (gratis, sin abogado)</h2>
 <ul>
   <li><b>Fiscalía:</b> <a href="https://www.fiscaliadechile.cl" rel="noopener">fiscaliadechile.cl</a>, "Denuncia en línea" con ClaveÚnica. Te da estatus de víctima en la causa penal.</li>
   <li><b>SERNAC:</b> <a href="https://www.sernac.cl" rel="noopener">sernac.cl</a>, reclamo contra el proveedor RUT 76.801.011-0.</li>
-  <li><b>CMF:</b> <a href="https://www.cmfchile.cl" rel="noopener">cmfchile.cl</a>, denuncia por operar sin inscripción en la Ley Fintec.</li>
-  <li><b>Boletín Concursal:</b> <a href="https://www.boletinconcursal.cl" rel="noopener">boletinconcursal.cl</a>. La liquidación voluntaria de Orionx SpA (17.º Juzgado Civil de Santiago, rol C-13868-2026) se publicó el 5 de noviembre de 2026 y el plazo para verificar tu crédito ya corre: la resolución fija 15 días. Si tienes abogado, confírmalo con él.</li>
+  <li><b>CMF:</b> <a href="https://www.cmfchile.cl" rel="noopener">cmfchile.cl</a>, denuncia por operar sin inscripción en la Ley Fintec. Si la página falla al entrar con ClaveÚnica, vuelve a intentarlo más tarde; en el Discord puedes postular sin ese folio y enviarlo después con <code>/cmf</code>.</li>
 </ul>
+
+<h2 id="liquidacion">Liquidación de OrionX: verifica tu crédito</h2>
+<div class="box info">
+<p>La liquidación voluntaria de Orionx SpA (17.º Juzgado Civil de Santiago, rol C-13868-2026) se publicó en el <a href="https://www.boletinconcursal.cl" rel="noopener">Boletín Concursal</a> el 5 de noviembre de 2026, y el plazo para verificar tu crédito ya corre: la resolución fija 15 días. La verificación se presenta ante el tribunal, en esa causa, con tus respaldos y con patrocinio de abogado. Quien no verifica a tiempo puede quedar fuera del reparto: no esperes al último día.</p>
+</div>
 
 <h2 id="estafas">Cuidado con las estafas</h2>
 <div class="box bad">
-<p>Tras un cierre así aparecen "abogados", "recuperadores" y falsos soportes. Nadie puede recuperar tus fondos fuera de la vía legal. OrionX no te va a pedir claves, códigos ni transferencias por teléfono, WhatsApp o redes sociales. El grupo no pide datos personales ni cobra por entrar. No compartas RUT, correo, comprobantes completos ni folios en el chat: en el Discord los folios se envían con el comando <code>/denuncias</code>, en privado. Nadie del grupo te va a escribir primero para pedirte datos.</p>
+<p>Tras un cierre así aparecen "abogados", "recuperadores" y falsos soportes. Nadie puede recuperar tus fondos fuera de la vía legal. Hay afectados recibiendo correos de supuestos abogados o empresas de "chargeback" que saben su nombre, RUT y monto y ofrecen recuperar la plata por un porcentaje: <b>es estafa</b>. La Fiscalía, la PDI, la CMF y el SERNAC no cobran ni escriben desde Gmail, y los correos reales de la Fiscalía terminan en <b>@minpublico.cl</b>.</p>
+<p>OrionX no te va a pedir claves, códigos ni transferencias por teléfono, WhatsApp o redes sociales. El grupo no pide datos personales ni cobra por entrar. No compartas RUT, correo, comprobantes completos ni folios en el chat: en el Discord los folios se envían con el comando <code>/denuncias</code>, en privado. Nadie del grupo te va a escribir primero para pedirte datos.</p>
 </div>
 
 <h2 id="prensa">Para periodistas e investigadores</h2>
@@ -129,7 +135,7 @@ footer{color:var(--mut);font-size:13px;line-height:1.6;border-top:1px solid var(
 
 <footer>
 <p>Página mantenida por afectados, de forma voluntaria y sin fines de lucro. No es asesoría legal ni financiera. Toda la información publicada proviene de comunicados de la empresa, de la CMF, de prensa y de datos públicos en la cadena de bloques. No acusamos a personas; la Fiscalía debe establecer responsabilidades.</p>
-<p>Código y datos: <a href="https://github.com/afectados-orionx">github.com/afectados-orionx</a>. Última actualización: 7 de noviembre de 2026.</p>
+<p>Código y datos: <a href="https://github.com/afectados-orionx">github.com/afectados-orionx</a>. Última actualización: 9 de noviembre de 2026.</p>
 </footer>
 </div>
 </body>
